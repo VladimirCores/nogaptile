@@ -1,6 +1,7 @@
 NGT (No Gap Tile)
 =========
 
+<pre>
 new NGT("content", {
 		sizes : [
 			{ min:0,     max:380,   cols: 1,    fixed: true },
@@ -24,7 +25,7 @@ new NGT("content", {
 		movelastcelltoclosegap	: true, // move last tile to gap if mergewithgap do not solve them
 		onResize				        : null
 	});
-
+</pre>
 
 
 License
