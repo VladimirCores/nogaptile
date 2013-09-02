@@ -16,7 +16,7 @@
 		squarescale				: true, // scale tiles proportionally when resize
 		makegap					: true, // append gap to layout
 		gap_markup				: "gap", // gap markup (inner html if string or module if element)
-		gap_backgound			: "#ccc", // gap background-color
+		gap_backgound			: "#232323", // gap background-color
 		gap_extend				: true, // merge gap with each others while they less then considition (max_width_dimension and max_height_dimension)
 		mergewithgap			: true, // merge gap with around tile that match gap size and condition (max_width_dimension and max_height_dimension)
 		movelastcelltoclosegap	: true, // move last tile to gap if mergewithgap do not solve them

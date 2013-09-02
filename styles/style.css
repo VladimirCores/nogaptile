@@ -12,7 +12,8 @@
 	font-weight: bold;
 	vertical-align: middle;
 	padding: 2rem;
-	border: 1px solid blue;
+	border-left: 1px solid blue;
+	border-bottom: 1px solid blue;
 }
 
 #gallery article:hover {
