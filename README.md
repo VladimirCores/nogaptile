@@ -12,18 +12,18 @@ new NGT("content", {
 			{ min:1600,  max:1920,  cols: 10 },
 			{ min:1920,  max:2680,  cols: 12 }
 		],
-		max_width_dimension 	  : 2,
-		max_height_dimension 	  : 2,
-		static_proportion 		  : false, // "1x1"
-		insequense				      : false, // fit last tile in row to cell width 
-		squarescale				      : true, // scale tiles proportionally when resize
-		makegap					        : true, // append gap to layout
-		gap_markup				      : "", // gap markup (inner html if string or module if element)
-		gap_backgound			      : "#ccc", // gap background-color
-		gap_extend				      : true, // merge gap with each others while they less then considition (max_width_dimension and max_height_dimension)
-		mergewithgap			      : true, // merge gap with around tile that match gap size and condition (max_width_dimension and max_height_dimension)
-		movelastcelltoclosegap	: true, // move last tile to gap if mergewithgap do not solve them
-		onResize				        : null
+		max_width_dimension 	  	: 2,
+		max_height_dimension 	  	: 2,
+		static_proportion 		: false, // "1x1"
+		insequense			: false, // fit last tile in row to cell width 
+		squarescale			: true, // scale tiles proportionally when resize
+		makegap				: true, // append gap to layout
+		gap_markup			: "", // gap markup (inner html if string or module if element)
+		gap_backgound			: "#ccc", // gap background-color
+		gap_extend			: true, // merge gap with each others while they less then considition (max_width_dimension and max_height_dimension)
+		mergewithgap			: true, // merge gap with around tile that match gap size and condition (max_width_dimension and max_height_dimension)
+		movelastcelltoclosegap		: true, // move last tile to gap if mergewithgap do not solve them
+		onResize			: null
 	});
 </pre>
 
