@@ -23,7 +23,7 @@
 		onResize				: null
 	}
 	MakeTiles("gallery", 23, 150, params.max_width_dimension, params.max_height_dimension);
-	new NGP("gallery", params);
+	new NGT("gallery", params);
 })();
 
     
