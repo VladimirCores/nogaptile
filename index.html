@@ -1,29 +1,188 @@
-<!doctype html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="content-script-type" content="text/javascript">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
- 	
-<title>NGP | No Gap Tiles</title>
-
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' type='text/css' rel='stylesheet' >
-<link href="styles/style.css" type="text/css" rel="stylesheet"/>
-<style type="text/css">
-	body {
-		background-color: #232323;
-		font-family: "Lato";
-		font-size: 18px;
-	}
-</style>
-<body>
-	<script src="libs/ngp.min.js" type="text/javascript"></script>
-	<div class="container">
-		<section id="gallery"></section>
-	</div>
-	<script src="js/maketiles.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
+<!DOCTYPE html>
+<html data-wf-site="5224ef26db37549947000577">
+  <head>
+    <meta charset="utf-8">
+    <title>NGT - No Gap Tiles</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/webflow.css">
+    <link rel="stylesheet" type="text/css" href="css/nogaptiles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Montserrat:400,700","Varela Round:400","Varela:400"]
+        }
+      });
+    </script>
+    <link rel="icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+    <link rel="apple-touch-icon" href="https://y7v4p6k4.ssl.hwcdn.net/51d2715929d9cfe03a000001/51e07282241660ce78000001_webclip-gallio.png">
+    <script type="text/javascript" src="js/webflow.js" defer></script>
+  </head>
+ <body>
+  <header class="section header" id="page-nav-SiteHead">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-4 company-column">
+          <div class="company">NGT</div><a class="nav-link" href="#" target="_self">version 0.85</a>
+        </div>
+        <nav class="w-col w-col-8 nav-column"><a class="nav-link" href="#page-nav-Responsive" target="_self">RESPONSIVE</a><a class="nav-link" href="#page-nav-Examples" target="_self">EXAMPLES</a><a class="nav-link" href="#page-nav-Features" target="_self">Features</a><a class="nav-link"
+          href="#page-nav-Download" target="_self">DOWNLOAD</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="section hero">
+    <div class="w-container">
+      <h1 class="hero-heading">Create beautiful grid with no gaps.</h1>
+      <p class="hero-subhead">You can create responsive and fluid, unified or fixed layout with no gaps at all.</p>
+      <img src="images/2-big-screen.png" width="940" alt="2-big-screen.png">
+    </div>
+  </div>
+  <div class="section" id="page-nav-Responsive">
+    <div class="w-container">
+      <h1 class="section-title">Responsive grid will be beautiful everywhere.</h1>
+      <p class="section-subtitle">You can specify number of column at any resolution you want</p>
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <img class="responsive-img" src="images/ff394bd2-a988-45b3-8d76-5981bb94edb3_3-responsive-color.png" width="452px" alt="ff394bd2-a988-45b3-8d76-5981bb94edb3_3-responsive-color.png">
+        </div>
+        <div class="w-col w-col-6 content-column">
+          <img class="grey-icon" src="images/5d50ecc4-95c5-4069-b5a6-e15d4014e630_4-icon-chrome.png" width="37px" alt="5d50ecc4-95c5-4069-b5a6-e15d4014e630_4-icon-chrome.png">
+          <img class="grey-icon" src="images/3e0be60f-fc82-4d60-96a1-0b833167e846_4-icon-fire.png" width="37px" alt="3e0be60f-fc82-4d60-96a1-0b833167e846_4-icon-fire.png">
+          <img class="grey-icon" src="images/8fd57219-c532-4565-b4bc-c316b3fc84d1_4-icon-ie.png" width="37px" alt="8fd57219-c532-4565-b4bc-c316b3fc84d1_4-icon-ie.png">
+          <img class="grey-icon" src="images/09cd2cce-353b-4b3b-8fdd-95687951a9a0_4-icon-safari.png" width="37px" alt="09cd2cce-353b-4b3b-8fdd-95687951a9a0_4-icon-safari.png">
+          <h3>Broad browser support.</h3>
+          <p>All major browsers are supported including Internet Explorer. Send it to your best friends and your grandma. It’ll work on their computers and phones.</p>
+          <img class="grey-icon" src="images/32f588ed-17db-4f75-b15a-2e4336bd4579_5-icon-apple.png"
+          width="37px" alt="32f588ed-17db-4f75-b15a-2e4336bd4579_5-icon-apple.png">
+          <img class="grey-icon" src="images/7e1c9c49-6033-4c65-8784-43ec4427695f_6-icon-android.png" width="37px" alt="7e1c9c49-6033-4c65-8784-43ec4427695f_6-icon-android.png">
+          <img class="grey-icon" src="images/097c71d3-588f-4280-8d3d-a20b22c191c2_7-icon-microsoft.png" width="37px" alt="097c71d3-588f-4280-8d3d-a20b22c191c2_7-icon-microsoft.png">
+          <h3>It’s gonna look good on all devices.</h3>
+          <p>Develop with "mobile first" in mind. You can specify number of columns at specific resolution. Calculation algorithm is very fast.</p>
+        </div>
+      </div>
+      <div class="w-clearfix"><a class="gotop" href="#page-nav-SiteHead" target="_self">Go top</a>
+      </div>
+    </div>
+  </div>
+  <div class="section grey" id="page-nav-Examples">
+    <div class="w-container">
+      <h1 class="section-title">Different layout modes.</h1>
+      <p class="section-subtitle">You can choose one of the layout algorithm that fit yuor needs</p>
+      <div class="w-row">
+        <div class="w-col w-col-4">
+          <div class="circle">
+            <div class="number">1</div>
+            <img src="images/e862862b-71c2-4c31-b42d-fa06454208fc_8-layout1.png" width="243px" alt="e862862b-71c2-4c31-b42d-fa06454208fc_8-layout1.png">
+          </div>
+          <h3>Static Proportion <br>&amp; Fixed Width</h3>
+          <p>Specify static proportion for all elements in the grid, they will stay with that size at all resolution</p>
+        </div>
+        <div class="w-col w-col-4">
+          <div class="circle">
+            <div class="number">2</div>
+            <img class="frames" src="images/765f203d-23b2-42de-9fb9-b6d11a3826d0_8-layout3.png" width="243px" alt="765f203d-23b2-42de-9fb9-b6d11a3826d0_8-layout3.png">
+          </div>
+          <h3>No gap</h3>
+          <p>There is a few algorith to close gaps in layout. You can choose one that fit your needs best.</p>
+        </div>
+        <div class="w-col w-col-4">
+          <div class="circle">
+            <div class="number">3</div>
+            <img class="frames" src="images/cfb9c962-e1a7-4beb-b83e-2a04600354d3_8-layout2.png" width="243px" alt="cfb9c962-e1a7-4beb-b83e-2a04600354d3_8-layout2.png">
+          </div>
+          <h3>Stacked</h3>
+          <p>Columns ( underconstruction )</p>
+        </div>
+      </div>
+      <div class="w-clearfix"><a class="gotop" href="#page-nav-SiteHead" target="_self">Go top</a>
+      </div>
+    </div>
+    <div class="w-container gallery" id="page-nav-gallery"></div>
+  </div>
+  <div class="section centered" id="page-nav-Features">
+    <div class="w-container">
+      <h1 class="section-title">Features &amp; Settings</h1>
+      <p class="section-subtitle">There is some OPTIONS you can play with</p>
+      <div class="w-row">
+        <div class="w-col w-col-4 w-col-small-4">
+          <h3>Max Width &amp; Height</h3>
+          <p>You can specify maximum tile size:
+            <br>- max_width_dimension (default 2)
+            <br>- max_height_dimension (default 2)</p>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4">
+          <h3>Square Scale</h3>
+          <p>That option allow proportional scale when resize happend. It's very fast cause all calculation cached and no need to be recalculated:
+            <br>- squarescale (default false)</p>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4">
+          <h3>Gap Markup &amp; Background</h3>
+          <p>Set markup or background color for every gap that added to layout:
+            <br>- gap_markup (default "")
+            <br>- gap_backgound (default "#343434")</p>
+        </div>
+      </div>
+      <div class="w-row">
+        <div class="w-col w-col-4 w-col-small-4">
+          <h3>Gap Class</h3>
+          <p>Specify class name for all gaps:
+            <br>- gap_classname (default "gap")</p>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4">
+          <h3>Different Algorithm</h3>
+          <p>There are a few algorithm for solve layout. You can choose static proportion, fit layout size insequense, move last tile to close gap.</p>
+        </div>
+        <div class="w-col w-col-4 w-col-small-4">
+          <h3>Response</h3>
+          <p>onResize ( cellwidth, columns )
+            <br>onLayoutChanged ( tiles, columns )</p>
+        </div>
+      </div>
+      <div class="w-clearfix"><a class="gotop" href="#page-nav-SiteHead" target="_self">Go top</a>
+      </div>
+    </div>
+  </div>
+  <div class="section grey" id="page-nav-Download">
+    <div class="w-container"><a class="button" href="#">DOWNLOAD</a>
+      <h1 class="section-title">LICENSE</h1>
+      <div class="w-hidden-small w-hidden-tiny license-text">NGT (No Gap Tile) may be used in commercial projects and applications with the one-time purchase of a commercial license.
+        <br>
+        <br>Open source license For non-commercial, personal, or open source projects and applications, you may use NGT (No Gap Tile) under the terms of the MIT License. You may use NGT (No Gap Tile) for free. If you are paid to do your job, and part of your
+        job is implementing NGT (No Gap Tile), a commercial license is required.</div>
+      <p class="section-subtitle">Commercial licensing.
+        <br>With the purchase of a commercial license:
+        <br>You may use NGT (No Gap Tile) in as many commercial applications you like.
+        <br>You may use NGT (No Gap Tile) in your own commercial applications and products. For example: premium WordPress, Tumblr, or other CMS themes, plugins and templates.
+        <br>Customers and users of your products do not need to purchase their own license – so long as they are not developing their own commercial products with NGT (No Gap Tile).
+        <br>
+        <br>FOR COMMERCIAL LICENSE PLEASE CONTACT US.</p>
+      <div class="w-clearfix"><a class="gotop" href="#page-nav-SiteHead" target="_self">Go top</a>
+      </div>
+    </div>
+  </div>
+  <footer class="section footer">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <div class="w-hidden-small w-hidden-tiny footer-text">Made by Vladimir Minkin at INBREATHE</div>
+        </div>
+        <div class="w-col w-col-6 right-footer-col">
+          <div class="w-hidden-small w-hidden-tiny footer-text">Contact us:</div>
+          <a class="w-inline-block social-icon first" href="mailto:vladimir.minkin@inbreathe.me?subject=NGT" target="_blank">
+            <img src="images/35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png" width="30px" alt="35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png">
+          </a>
+          <a class="w-inline-block social-icon" href="http://facebook.com/dqvsra" target="_blank">
+            <img src="images/8643c589-cd4b-46b1-956b-2eb95815c79c_14-social-facebook.png" width="30px" alt="8643c589-cd4b-46b1-956b-2eb95815c79c_14-social-facebook.png">
+          </a>
+          <a class="w-inline-block social-icon" href="http://www.twitter.com/dqvsra" target="_blank">
+            <img src="images/a1c85180-93b5-44b0-9d23-1cfa6881fdfe_14-social-twitter.png" width="30px" alt="a1c85180-93b5-44b0-9d23-1cfa6881fdfe_14-social-twitter.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
