@@ -28,6 +28,7 @@ new NGT("content", {
 </pre>
 
 <img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_1.jpg">
+<img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_2.jpg">
 
 
 License
