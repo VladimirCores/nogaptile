@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+ 	
+<title>NGT | Static Proportion</title>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' type='text/css' rel='stylesheet' >
+<link href="../../css/topcoat.min.css" type="text/css" rel="stylesheet"/>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<style type="text/css">
+	body {
+		background-color: #111;
+		font-family: "Lato";
+		font-size: 18px;
+	}
+</style>
+<body>
+	<script src="../../libs/ngt.js" type="text/javascript"></script>
+	<div class="controls">
+		<input id="inp_proportion" type="text" class="topcoat-text-input--large" value="" placeholder="proportion here (1x2)">
+		<button id="btn_apply" class="topcoat-button--large">Apply</button>
+	</div>
+	<span id="stats" class="stats"></span>
+	<div class="container">
+		<section id="gallery"></section>
+	</div>
+	<script src="../../js/maketiles.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		(function () {
+			// STANDART SIZES 
+			// var sizes = [ 
+			// 	{ 	min:0,     max:380,   cols: 1,    fixed: true },
+			// 	{ 	min:380,   max:760,   cols: 2,    fixed: true },
+			// 	{ 	min:760,   max:1000,  cols: 4  },
+			// 	{ 	min:1000,  max:1280,  cols: 6  },
+			// 	{ 	min:1280,  max:1600,  cols: 8  },
+			// 	{ 	min:1600,  max:1920,  cols: 10 },
+			// 	{ 	min:1920,  max:2680,  cols: 12 }
+			// ];
+			var params = { static_proportion : "1x2" };
+			var ngt = new NGT("gallery", null, { onResize: Handle_OnResize  });
+
+			btn_apply.addEventListener("click", function (e) {
+				if(inp_proportion.value) params.static_proportion = inp_proportion.value;
+				ngt.setup(params);
+				ngt.init();
+			})
+			
+			MakeTiles("gallery", 35);
+
+			function Handle_OnResize (argument, columns) {
+				stats.innerText = "width : " + argument.width + "px" + "\ncolumns : " + columns
+			}
+			
+		})();
+		</script>
+</body>
+</html>

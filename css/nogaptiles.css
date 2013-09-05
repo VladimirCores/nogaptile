@@ -163,9 +163,13 @@ p {
   text-align: center;
 }
 .section-subtitle {
-  margin-bottom: 43px;
+  direction: ltr;
   color: #848999;
+  font-size: 13px;
+  line-height: 21px;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .responsive-img {
   display: block;
@@ -270,6 +274,24 @@ p {
 }
 .right-footer-col {
   text-align: right;
+}
+.license-text {
+  margin-bottom: 21px;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+}
+.gotop {
+  left: 0px;
+  top: 0px;
+  float: right;
+  color: #b3b1b1;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: right;
+}
+.gallery {
+  margin-top: 22px;
 }
 @media (max-width: 991px) {
   .button.nav {

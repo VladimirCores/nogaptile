@@ -1,0 +1,43 @@
+.controls {
+	margin: 2rem;
+}
+
+.topcoat-button--large {
+	margin-left: 0.5rem;
+}
+
+.stats {
+	z-index: 1000;
+	box-sizing: border-box;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	font-size: 1rem;
+	line-height: 1em;
+	color: #555;
+	padding: 1rem;
+}
+
+#gallery {
+	margin: 0 auto;
+	height: 100%;
+	position: relative;	
+}
+
+#gallery article {
+	background-color: #232323;
+	box-sizing: border-box;
+	font-size: 3rem;
+	line-height: 2em;
+	font-weight: bold;
+	vertical-align: middle;
+	border: 1px solid gold;
+	text-align: center;
+}
+
+#gallery article:hover {
+	background-color: #151515 !important;
+	border: 1px solid gold;
+	color: #f0f0f0;
+
+}
