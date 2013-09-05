@@ -27,10 +27,9 @@ new NGT("content", {
 });
 </pre>
 
-<<<<<<< HEAD
-=======
+<img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_1.jpg">
 
->>>>>>> 622081080a56d5a993065c4a4b3580400397bd66
+
 License
 
 NGT (No Gap Tile) may be used in commercial projects and applications with the one-time purchase of a commercial license.
