@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+ 	
+<title>NGT | No Gap Tiles</title>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' type='text/css' rel='stylesheet' >
+<link href="../../css/topcoat.min.css" type="text/css" rel="stylesheet"/>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<style type="text/css">
+	body {
+		background-color: #111;
+		font-family: "Lato";
+		font-size: 18px;
+	}
+</style>
+<body>
+	<script src="../../libs/ngt.js" type="text/javascript"></script>
+	<div class="controls">
+		<div class="checkers">
+			<label class="topcoat-checkbox">
+			  <input id="chkb_insequense" type="checkbox">
+			  <div class="topcoat-checkbox__checkmark"></div>
+			  insequense
+			</label>
+			<label class="topcoat-checkbox">
+			  <input id="chkb_movelastcelltoclosegap" type="checkbox">
+			  <div class="topcoat-checkbox__checkmark"></div>
+			  movelastcelltoclosegap
+			</label>
+			<label class="topcoat-checkbox">
+			  <input id="chkb_squarescale" type="checkbox">
+			  <div class="topcoat-checkbox__checkmark"></div>
+			  squarescale
+			</label>
+			<label class="topcoat-checkbox">
+			  <input id="chkb_makegap" type="checkbox">
+			  <div class="topcoat-checkbox__checkmark"></div>
+			  makegap
+			</label>
+			<label class="topcoat-checkbox">
+			  <input id="chkb_gap_extend" type="checkbox">
+			  <div class="topcoat-checkbox__checkmark"></div>
+			  gap_extend
+			</label>
+			<label class="topcoat-checkbox">
+			  <input id="chkb_mergewithgap" type="checkbox">
+			  <div class="topcoat-checkbox__checkmark"></div>
+			  mergewithgap
+			</label>
+		</div>
+		<button id="btn_apply" class="topcoat-button--large">Apply</button>
+	</div>
+	<span id="stats" class="stats"></span>
+	<div class="container">
+		<section id="gallery"></section>
+	</div>
+	<script src="../../js/maketiles.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		(function () {
+			
+			var sizes = [ // STANDART SIZES 
+				{ 	min:0,     max:380,   cols: 1,    fixed: true },
+				{ 	min:380,   max:760,   cols: 2,    fixed: true },
+				{ 	min:760,   max:1000,  cols: 5  },
+				{ 	min:1000,  max:1280,  cols: 6  },
+				{ 	min:1280,  max:1600,  cols: 8  },
+				{ 	min:1600,  max:1920,  cols: 11 },
+				{ 	min:1920,  max:2680,  cols: 13 }
+			];
+
+			var params = 
+			{
+				// fit last tile in row to cell width 
+				insequense				: false, 
+				// scale tiles proportionally when resize
+				squarescale				: false, 
+				// append gap to layout
+				makegap					: false,
+				gap_markup				: "gap",
+				// merge gap with each others while they less then considition
+				gap_extend				: false, 
+				// merge gap with around tile that match gap size and condition 
+				mergewithgap			: false, 
+				// move last tile to gap if mergewithgap do not solve them
+				movelastcelltoclosegap	: false, 
+				onResize: Handle_OnResize
+			}
+
+			MakeTiles("gallery", 25);
+			var ngt = new NGT("gallery", sizes, params);
+
+			btn_apply.addEventListener("click", function (e) {
+				SetupParamsValues();
+				ngt.reinit(params);
+			})
+			
+			function Handle_OnResize (cellwidth, columns) {
+				stats.innerText = "cell width: " + cellwidth + "\ncolumns : " + columns
+			}
+
+			function SetupParamsValues () {
+				params.insequense 		= chkb_insequense.checked;
+				params.squarescale 		= chkb_squarescale.checked;
+				params.makegap 			= chkb_makegap.checked;
+				params.gap_extend 		= chkb_gap_extend.checked;
+				params.mergewithgap 	= chkb_mergewithgap.checked;
+				params.movelastcelltoclosegap 	= chkb_movelastcelltoclosegap.checked;
+			}
+			
+		})();
+		</script>
+</body>
+</html>
