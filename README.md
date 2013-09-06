@@ -3,7 +3,7 @@ NGT (No Gap Tile)
 
 At current version you need to specify tile "data-size" attribute like this:  
 <pre>
-	<div data-size="2x2"> ... </div>
+	<b>"div data-size="2x2" ... /div"</b>
 </pre>
 <pre>
 new NGT("content", {
@@ -41,7 +41,18 @@ That images show you one trick for close gaps inside the layout by merging them 
 <img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_2.jpg">
 
 
+TODO:
+=========
+
+1. Append elements to layout
+2. Find tile size by comparing w\h (Done, need to be tested)
+3. Made more exaples (W8 style)
+4. Fixed height - infinite width
+5. Tests
+
+
 License
+=========
 
 NGT (No Gap Tiles) may be used in commercial projects and applications with the one-time purchase of a commercial license.
 
