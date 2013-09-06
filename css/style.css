@@ -1,0 +1,31 @@
+#gallery {
+	margin: 2rem auto;
+	height: 500px;
+	width: 100%;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: 5px solid black;
+}
+
+#gallery article {
+	background-color: #232323;
+	box-sizing: border-box;
+	font-size: 3rem;
+	line-height: 2em;
+	font-weight: bold;
+	vertical-align: middle;
+	border: 1px solid gold;
+	text-align: center;
+}
+
+#gallery article:hover {
+	background-color: #151515 !important;
+	border: 1px solid gold;
+	color: #f0f0f0;
+
+}
+
+.gap {
+	color: #ddd;
+}
