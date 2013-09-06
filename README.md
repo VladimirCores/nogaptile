@@ -5,6 +5,9 @@ At current version you need to specify tile "data-size" attribute like this:
 <pre>
 	<b>"div data-size="2x2" ... /div"</b>
 </pre>
+
+Next you can find simple explanation for parameters with default value:
+
 <pre>
 new NGT("content", {
 	sizes : [
@@ -20,10 +23,11 @@ new NGT("content", {
 	max_height_dimension : 2,
 	static_proportion : false, // "1x1"
 	insequense : false, // fit last tile in row to cell width 
-	squarescale : true, // scale tiles proportionally when resize
-	makegap	: true, // append gap to layout
+	squarescale : false, // scale tiles proportionally when resize
+	makegap	: false, // append gap to layout
 	gap_markup : "", // gap markup (inner html if string or module if element)
-	gap_backgound : "#ccc", // gap background-color
+	gap_backgound : "#343434", // gap background-color
+	gap_classname : "gap", // class for gap
 	gap_extend : true, // merge gap with each others while they less then considition (max_width_dimension and max_height_dimension)
 	mergewithgap : true, // merge gap with around tile that match gap size and condition (max_width_dimension and max_height_dimension)
 	movelastcelltoclosegap : true, // move last tile to gap if mergewithgap do not solve them
