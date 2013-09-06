@@ -2,9 +2,9 @@ NGT (No Gap Tile)
 =========
 
 At current version you need to specify tile "data-size" attribute like this:  
-<code>
+<pre>
 	<div data-size="2x2"> ... </div>
-</code>
+</pre>
 <pre>
 new NGT("content", {
 	sizes : [
@@ -33,9 +33,11 @@ new NGT("content", {
 </pre>
 
 The pictures below show you example of using different algorithm. First image has no optimization at all and work like <a href="http://isotope.metafizzy.co/" target="_blank">izotope</a>. Second image show you simple optimization where last tile close gaps.
+
 <img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_1.jpg">
 
 That images show you one trick for close gaps inside the layout by merging them with surrounding tile if the size of that gap plus size of tile less or equal max available width and height (max_width_dimension, max_height_dimension)
+
 <img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_2.jpg">
 
 
