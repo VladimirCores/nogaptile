@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/webflow.css">
     <link rel="stylesheet" type="text/css" href="css/nogaptiles.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <script>
       WebFont.load({
@@ -16,6 +17,7 @@
         }
       });
     </script>
+    <script src="libs/ngt.min.js" type="text/javascript"></script>
     <link rel="icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
     <link rel="apple-touch-icon" href="https://y7v4p6k4.ssl.hwcdn.net/51d2715929d9cfe03a000001/51e07282241660ce78000001_webclip-gallio.png">
     <script type="text/javascript" src="js/webflow.js" defer></script>
@@ -25,7 +27,7 @@
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-4 company-column">
-          <div class="company">NGT</div><a class="nav-link" href="#" target="_self">version 0.85</a>
+          <div class="company">NGT</div><a class="nav-link" href="https://github.com/DQvsRA/nogaptile" target="_blank">version 0.85</a>
         </div>
         <nav class="w-col w-col-8 nav-column"><a class="nav-link" href="#page-nav-Responsive" target="_self">RESPONSIVE</a><a class="nav-link" href="#page-nav-Examples" target="_self">EXAMPLES</a><a class="nav-link" href="#page-nav-Features" target="_self">Features</a><a class="nav-link"
           href="#page-nav-Download" target="_self">DOWNLOAD</a>
@@ -43,7 +45,7 @@
   <div class="section" id="page-nav-Responsive">
     <div class="w-container">
       <h1 class="section-title">Responsive grid will be beautiful everywhere.</h1>
-      <p class="section-subtitle">You can specify number of column at any resolution you want</p>
+      <p class="section-subtitle">You can specify number of columns at any resolution</p>
       <div class="w-row">
         <div class="w-col w-col-6">
           <img class="responsive-img" src="images/ff394bd2-a988-45b3-8d76-5981bb94edb3_3-responsive-color.png" width="452px" alt="ff394bd2-a988-45b3-8d76-5981bb94edb3_3-responsive-color.png">
@@ -67,40 +69,40 @@
       </div>
     </div>
   </div>
-  <div class="section grey" id="page-nav-Examples">
+  <div class="section grey" id="page-nav-Examples" style="position:relative;">
     <div class="w-container">
       <h1 class="section-title">Different layout modes.</h1>
-      <p class="section-subtitle">You can choose one of the layout algorithm that fit yuor needs</p>
+      <p class="section-subtitle">You can choose one of the layout algorithm that fit your needs</p>
       <div class="w-row">
         <div class="w-col w-col-4">
-          <div class="circle">
+          <a class="nav-link" href="./examples/fixed/index.html" target="_blank"><div class="circle">
             <div class="number">1</div>
             <img src="images/e862862b-71c2-4c31-b42d-fa06454208fc_8-layout1.png" width="243px" alt="e862862b-71c2-4c31-b42d-fa06454208fc_8-layout1.png">
-          </div>
-          <h3>Static Proportion <br>&amp; Fixed Width</h3>
-          <p>Specify static proportion for all elements in the grid, they will stay with that size at all resolution</p>
+          </div></a>
+          <h3>Fixed Width</h3>
+          <p>It's square size for tiles</p>
         </div>
         <div class="w-col w-col-4">
-          <div class="circle">
+           <a class="nav-link" href="./examples/staticproportion/index.html" target="_blank"><div class="circle">
             <div class="number">2</div>
-            <img class="frames" src="images/765f203d-23b2-42de-9fb9-b6d11a3826d0_8-layout3.png" width="243px" alt="765f203d-23b2-42de-9fb9-b6d11a3826d0_8-layout3.png">
-          </div>
-          <h3>No gap</h3>
-          <p>There is a few algorith to close gaps in layout. You can choose one that fit your needs best.</p>
+            <img class="frames" src="images/cfb9c962-e1a7-4beb-b83e-2a04600354d3_8-layout2.png" width="243px" alt="cfb9c962-e1a7-4beb-b83e-2a04600354d3_8-layout2.png">
+          </div></a>
+          <h3>Static Proportion</h3>
+          <p>Specify static proportion (like 2x1 or 3x2) for all elements in the grid, they will stay with that size at all resolution</p>
         </div>
         <div class="w-col w-col-4">
-          <div class="circle">
+          <a class="nav-link" href="./examples/nogaptiles/index.html" target="_blank"><div class="circle">
             <div class="number">3</div>
-            <img class="frames" src="images/cfb9c962-e1a7-4beb-b83e-2a04600354d3_8-layout2.png" width="243px" alt="cfb9c962-e1a7-4beb-b83e-2a04600354d3_8-layout2.png">
-          </div>
-          <h3>Stacked</h3>
-          <p>Columns ( underconstruction )</p>
+            <img class="frames" src="images/765f203d-23b2-42de-9fb9-b6d11a3826d0_8-layout3.png" width="243px" alt="765f203d-23b2-42de-9fb9-b6d11a3826d0_8-layout3.png">
+          </div></a>
+          <h3>No gap</h3>
+          <p>There is a few algorithm to close gaps in layout. You can choose one that fit your needs best. <br> EVERY TILE MUST HAVE "data-size=WxH" attribute  </p>
         </div>
       </div>
       <div class="w-clearfix"><a class="gotop" href="#page-nav-SiteHead" target="_self">Go top</a>
       </div>
     </div>
-    <div class="w-container gallery" id="page-nav-gallery"></div>
+    <div class="w-container gallery" id="gallery"></div>
   </div>
   <div class="section centered" id="page-nav-Features">
     <div class="w-container">
@@ -184,5 +186,12 @@
       </div>
     </div>
   </footer>
+  <script src="js/maketiles.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    (function () {
+      MakeTiles("gallery", 25);
+      var ngt = new NGT("gallery", null, { makegap : true, gap_markup : "gap" });
+    })();
+    </script>
 </body>
 </html>
