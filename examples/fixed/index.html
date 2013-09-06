@@ -21,10 +21,14 @@
 </style>
 <body>
 	<script src="../../libs/ngt.min.js" type="text/javascript"></script>
-	<div class="controls">
-		<input id="inp_proportion" type="text" class="topcoat-text-input--large" value="" placeholder="proportion here (1x2)">
+	<!-- <div class="controls">
+		<label class="topcoat-checkbox">
+		  <input id="chkb_squarescale" type="checkbox">
+		  <div class="topcoat-checkbox__checkmark"></div>
+		  squarescale
+		</label>
 		<button id="btn_apply" class="topcoat-button--large">Apply</button>
-	</div>
+	</div> -->
 	<span id="stats" class="stats"></span>
 	<div class="container">
 		<section id="gallery"></section>
@@ -32,30 +36,23 @@
 	<script src="../../js/maketiles.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		(function () {
-			// STANDART SIZES 
-			// var sizes = [ 
-			// 	{ 	min:0,     max:380,   cols: 1,    fixed: true },
-			// 	{ 	min:380,   max:760,   cols: 2,    fixed: true },
-			// 	{ 	min:760,   max:1000,  cols: 4  },
-			// 	{ 	min:1000,  max:1280,  cols: 6  },
-			// 	{ 	min:1280,  max:1600,  cols: 8  },
-			// 	{ 	min:1600,  max:1920,  cols: 10 },
-			// 	{ 	min:1920,  max:2680,  cols: 12 }
-			// ];
-			var params = { static_proportion : "1x2" };
-			var ngt = new NGT("gallery", null, { onResize: Handle_OnResize  });
-
-			btn_apply.addEventListener("click", function (e) {
-				if(inp_proportion.value) params.static_proportion = inp_proportion.value;
-				ngt.reinit(params);
-			})
-			
+			var sizes = [ 
+				{ 	min:0,     max:380,   cols: 1,    	fixed: true },
+				{ 	min:380,   max:760,   cols: 2,    	fixed: true },
+				{ 	min:760,   max:1000,  cols: 4,		fixed: true },
+				{ 	min:1000,  max:1280,  cols: 6,		fixed: true },
+				{ 	min:1280,  max:1600,  cols: 8,		fixed: true },
+				{ 	min:1600,  max:1920,  cols: 10,		fixed: true },
+				{ 	min:1920,  max:2680,  cols: 12,		fixed: true }
+			];
 			MakeTiles("gallery", 35);
-
+			var ngt = new NGT("gallery", sizes, { onResize: Handle_OnResize  });
 			function Handle_OnResize (argument, columns) {
 				stats.innerText = "width : " + argument + "\ncolumns : " + columns
 			}
-			
+			// btn_apply.addEventListener("click", function (e) {
+			// 	ngt.reinit( { squarescale: chkb_squarescale.checked } );
+			// })
 		})();
 		</script>
 </body>
