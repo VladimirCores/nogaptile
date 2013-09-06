@@ -36,13 +36,21 @@ new NGT("content", {
 });
 </pre>
 
-The pictures below show you example of using different algorithm. First image has no optimization at all and work like <a href="http://isotope.metafizzy.co/" target="_blank">izotope</a>. Second image show you simple optimization where last tile close gaps.
+The pictures below show you example of using different algorithm. First image has no optimization at all and work like <a href="http://isotope.metafizzy.co/" target="_blank">izotope</a>. Second image show you simple optimization where last tiles close gaps. And last the last image is different algorithm where last tile in row match empty space.
 
 <img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_1.jpg">
 
 That images show you one trick for close gaps inside the layout by merging them with surrounding tile if the size of that gap plus size of tile less or equal max available width and height (max_width_dimension, max_height_dimension)
 
 <img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_2.jpg">
+
+
+EXAMPLES: 
+=========
+1. Site "Layout" prototype: <a href="http://inbreathe.me/koken/layout/">http://inbreathe.me/koken/layout/</a>
+2. <a href="http://dqvsra.github.io/nogaptile/examples/fixed/index.html">No Gap Layout</a>
+3. <a href="http://dqvsra.github.io/nogaptile/examples/fixed/index.html">Fixed Layout</a>
+4. <a href="http://dqvsra.github.io/nogaptile/examples/fixed/index.html">Static Layout</a>
 
 
 TODO:
