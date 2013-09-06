@@ -1,6 +1,10 @@
 NGT (No Gap Tile)
 =========
 
+At current version you need to specify tile "data-size" attribute like this:  
+<code>
+	<div data-size="2x2"> ... </div>
+</code>
 <pre>
 new NGT("content", {
 	sizes : [
@@ -23,30 +27,34 @@ new NGT("content", {
 	gap_extend : true, // merge gap with each others while they less then considition (max_width_dimension and max_height_dimension)
 	mergewithgap : true, // merge gap with around tile that match gap size and condition (max_width_dimension and max_height_dimension)
 	movelastcelltoclosegap : true, // move last tile to gap if mergewithgap do not solve them
-	onResize : null
+	onResize : null,
+	onLayoutChanged : null
 });
 </pre>
 
+The pictures below show you example of using different algorithm. First image has no optimization at all and work like <a href="http://isotope.metafizzy.co/" target="_blank">izotope</a>. Second image show you simple optimization where last tile close gaps.
 <img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_1.jpg">
+
+That images show you one trick for close gaps inside the layout by merging them with surrounding tile if the size of that gap plus size of tile less or equal max available width and height (max_width_dimension, max_height_dimension)
 <img src="https://raw.github.com/DQvsRA/nogaptile/master/examples/images/nogaptiles_algorithm_2.jpg">
 
 
 License
 
-NGT (No Gap Tile) may be used in commercial projects and applications with the one-time purchase of a commercial license.
+NGT (No Gap Tiles) may be used in commercial projects and applications with the one-time purchase of a commercial license.
 
 Open source license
-For non-commercial, personal, or open source projects and applications, you may use NGT (No Gap Tile) under the terms of the MIT License. You may use NGT (No Gap Tile) for free.
+For non-commercial, personal, or open source projects and applications, you may use NGT (No Gap Tiles) under the terms of the MIT License. You may use NGT (No Gap Tiles) for free.
 
 What is commercial considered?
-If you are paid to do your job, and part of your job is implementing NGT (No Gap Tile), a commercial license is required.
+If you are paid to do your job, and part of your job is implementing NGT (No Gap Tiles), a commercial license is required.
 
 Commercial licensing
 
-Purchasing accepts most credit cards and takes seconds. Once purchased, you’ll receive a commercial license PDF and you will be all set to use NGT (No Gap Tile) in your commercial applications.
+Purchasing accepts most credit cards and takes seconds. Once purchased, you’ll receive a commercial license PDF and you will be all set to use NGT (No Gap Tiles) in your commercial applications.
 
 With the purchase of a commercial license:
 
-You may use NGT (No Gap Tile) in as many commercial applications you like.
-You may use NGT (No Gap Tile) in your own commercial applications and products. For example: premium WordPress, Tumblr, or other CMS themes, plugins and templates.
-Customers and users of your products do not need to purchase their own license – so long as they are not developing their own commercial products with NGT (No Gap Tile).
+You may use NGT (No Gap Tiles) in as many commercial applications you like.
+You may use NGT (No Gap Tiles) in your own commercial applications and products. For example: premium WordPress, Tumblr, or other CMS themes, plugins and templates.
+Customers and users of your products do not need to purchase their own license – so long as they are not developing their own commercial products with NGT (No Gap Tiles).
