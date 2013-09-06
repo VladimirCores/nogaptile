@@ -46,7 +46,7 @@ TODO:
 
 1. Append elements to layout
 2. Find tile size by comparing w\h (Done, need to be tested)
-3. Made more exaples (W8 style)
+3. Made more examples (W8 style)
 4. Fixed height - infinite width
 5. Tests
 
