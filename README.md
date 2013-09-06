@@ -48,9 +48,9 @@ That images show you one trick for close gaps inside the layout by merging them 
 EXAMPLES: 
 =========
 1. Site "Layout" prototype: <a href="http://inbreathe.me/koken/layout/">http://inbreathe.me/koken/layout/</a>
-2. <a href="http://dqvsra.github.io/nogaptile/examples/fixed/index.html">No Gap Layout</a>
+2. <a href="http://dqvsra.github.io/nogaptile/examples/nogaptiles/index.html">No Gap Layout</a>
 3. <a href="http://dqvsra.github.io/nogaptile/examples/fixed/index.html">Fixed Layout</a>
-4. <a href="http://dqvsra.github.io/nogaptile/examples/fixed/index.html">Static Layout</a>
+4. <a href="http://dqvsra.github.io/nogaptile/examples/staticproportion/index.html">Static Layout</a>
 
 
 TODO:
