@@ -79,20 +79,20 @@
 				// fit last tile in row to cell width 
 				insequense				: false, 
 				// scale tiles proportionally when resize
-				squarescale				: false, 
+				squarescale				: true, 
 				// append gap to layout
-				makegap					: false,
+				makegap					: true,
 				gap_markup				: "gap",
 				// merge gap with each others while they less then considition
-				gap_extend				: false, 
+				gap_extend				: true, 
 				// merge gap with around tile that match gap size and condition 
-				mergewithgap			: false, 
+				mergewithgap			: true, 
 				// move last tile to gap if mergewithgap do not solve them
-				movelastcelltoclosegap	: false, 
+				movelastcelltoclosegap	: true, 
 				onResize: Handle_OnResize
 			}
 
-			MakeTiles("gallery", 25);
+			MakeTiles("gallery", 35);
 			var ngt = new NGT("gallery", sizes, params);
 
 			btn_apply.addEventListener("click", function (e) {
