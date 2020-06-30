@@ -1,4 +1,4 @@
-NGT (No Gap Tile)
+NGT (No Gap Tile) - http://dqvsra.github.io/nogaptile/
 =========
 
 At current version you need to specify tile "data-size" attribute like this:  
